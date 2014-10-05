@@ -1,0 +1,50 @@
+=head1 bashfix
+
+A Perl script that checks your current Bash version, and installs a patched Bash that is fixed from Shellshock but is the same major and minor version of your existing Bash install.
+
+Why do this? Well if your Linux version is no longer supported (e.g. Fedora 18 and below) then you won't get a security release to patch Bash. This script will download, patch and build a new Bash for you.
+
+bashfix has been tested on Perl versions 5.8 and 5.20.0, and Fedora and CentOS Linux.
+
+=head2 Synopsis
+
+    $ git clone https://github.com/sillymoose/bashfix.git
+    $ cd bashfix
+    $ chmod +x bashfix.pl
+    $ ./bashfix.pl
+
+=head2 Requirements
+
+=over 4
+
+=item *
+
+Perl 5.8 or higher
+
+=item *
+
+No extra modules required
+
+=item *
+
+Linux with Bash version 3.* or 4.*
+
+=item *
+
+The following C binaries: wget, curl, bison, byacc, gettext, patch, autoconf
+
+=item *
+
+An internet connection to download Bash and associated patches from GNU
+
+=back
+
+=head2 Thanks
+
+Thanks to Steve Jenkins, his blog post L<How to patch Bash|http://stevejenkins.com/blog/2014/09/how-to-manually-update-bash-to-patch-shellshock-bug-on-older-fedora-based-systems/> formed the basis of this solution.
+
+=head2 License
+
+FreeBSD 2 clause - see LICENSE file
+
+=cut
