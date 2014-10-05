@@ -1,4 +1,4 @@
-=head1 bashfix
+=head1 bashfix version 0.01
 
 A Perl script that checks your current Bash version, and installs a patched Bash that is fixed from Shellshock but is the same major and minor version of your existing Bash install.
 
