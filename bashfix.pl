@@ -5,7 +5,7 @@ use File::Temp 'tempdir';
 use 5.008;
 use Carp 'croak';
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 my %bash_patches_count = (
     '3.0' => 21,
@@ -16,6 +16,8 @@ my %bash_patches_count = (
     '4.2' => 52,
     '4.3' => 29,
 );
+# check not root user
+check_not_root();
 
 # check mandatory C binaries available
 check_prereqs();
