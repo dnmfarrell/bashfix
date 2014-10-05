@@ -1,4 +1,4 @@
-=head1 bashfix version 0.01
+=head1 bashfix
 
 A Perl script that checks your current Bash version, and installs a patched Bash that is fixed from Shellshock but is the same major and minor version of your existing Bash install.
 
@@ -38,6 +38,10 @@ The following C binaries: wget, curl, bison, byacc, gettext, patch, autoconf
 An internet connection to download Bash and associated patches from GNU
 
 =back
+
+=head2 Version
+
+0.01
 
 =head2 Thanks
 
