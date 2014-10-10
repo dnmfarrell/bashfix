@@ -5,7 +5,7 @@ use File::Temp 'tempdir';
 use 5.008;
 use Carp 'croak';
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 my %bash_patches_count = (
     '3.0' => 22,
